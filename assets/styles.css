@@ -444,8 +444,8 @@ a {
 }
 
 #letter-a:active {
-  transform: scale(1.2);
-  transition: transform 0.3s;
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 0.7s;
   transition-timing-function: ease-out;
 }
 
@@ -486,8 +486,8 @@ a {
 }
 
 #letter-h:active {
-  transform: scale(1.2);
-  transition: transform 0.3s;
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 0.7s;
   transition-timing-function: ease-out;
 }
 
@@ -551,8 +551,8 @@ a {
 }
 
 #letter-s:active {
-  transform: scale(1.2);
-  transition: transform 0.3s;
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 0.7s;
   transition-timing-function: ease-out;
 }
 
