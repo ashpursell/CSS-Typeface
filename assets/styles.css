@@ -1,0 +1,587 @@
+@font-face {
+  font-family: "test";
+  src: url("'CSS Typeface/assets/test.ttf'") format("truetype");
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  justify-items: center;
+  color: white;
+  font-family: "test", monospace;
+}
+
+.letter {
+  width: 40vh;
+  aspect-ratio: 4/6;
+  /* border: 2px solid black; */
+  float: left;
+  margin-right: 2vh;
+}
+
+.block {
+  width: 10vh;
+  aspect-ratio: 1/1;
+  background-color: beige;
+  float: left;
+  overflow: hidden;
+}
+
+/* Black Color for Blocks */
+.solid {
+  background-color: black;
+}
+
+/* A Hover Effects Start */
+#letter-a:hover .solid {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+#letter-a:hover .inverted {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-a:hover .quarter-circle {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-a:hover .terminal {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-a:hover .rect {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-a:hover .circle {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+/* A Hover Effects End */
+
+.quarter-circle {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.quarter-circle-blk {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-white {
+  border-radius: 50%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.inverted {
+  background-color: white;
+}
+
+.rect {
+  height: 50%;
+  background-color: white;
+}
+
+.rect-1-wht {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  top: 0%;
+  position: absolute;
+}
+
+.rect-2-wht {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+}
+
+.rect-1-blk {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  top: 0%;
+  position: absolute;
+}
+
+.rect-2-blk {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0%;
+}
+
+.terminal {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  top: -50%;
+}
+
+.half-circle {
+  border-radius: 50%;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+}
+
+/* rotations */
+.r-315 {
+  transform: rotate(-225deg);
+}
+
+.r-90 {
+  transform: rotate(90deg);
+}
+
+.r-180 {
+  transform: rotate(180deg);
+}
+
+.r-270 {
+  transform: rotate(270deg);
+}
+
+/* B Hover Effects Start */
+#letter-b:hover .solid {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+#letter-b:hover .inverted {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-b:hover .quarter-circle {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-b:hover .terminal {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-b:hover .rect {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-b:hover .half-circle {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+/* B Hover Effects End */
+
+/* C Hover Effects Start */
+#letter-c:hover .solid {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+#letter-c:hover .inverted {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-c:hover .quarter-circle {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-c:hover .terminal {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-c:hover .rect {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-c:hover .circle {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+/* C Hover Effects End */
+
+/* D Hover Effects Start */
+#letter-d:hover .solid {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover .inverted {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover .quarter-circle {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover .terminal {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover .rect {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+#letter-d:hover .half-circle {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+/* D Hover Effects End */
+
+#letter-e:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-f:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-g:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-h:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-i:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-j:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-k:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-l:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-m:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-n:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-o:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-p:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-q:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-r:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-s:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-t:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-u:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-v:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-w:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-x:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-y:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-z:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-ampersand:hover {
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+#letter-h:active {
+  transform: rotate(360deg);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-s:active {
+  transform: rotate(360deg);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-a:active {
+  transform: rotate(360deg);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+/* #letter-ampersand:active .terminal {
+  background-color: darkgreen;
+  transition: background-color 0.3s;
+}
+
+#letter-ampersand:active .rect {
+  background-color: darkgreen;
+  transition: background-color 0.3s;
+}
+
+#letter-ampersand:active .inverted {
+  background-color: darkgreen;
+  transition: background-color 0.3s;
+}
+
+#letter-ampersand:active .quarter-circle {
+  background-color: darkgreen;
+  transition: background-color 0.3s;
+} */
+
+#letter-ampersand:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-a:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-b:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-c:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-d:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-e:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-f:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-g:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-h:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-i:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-j:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-k:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-l:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-m:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-n:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-o:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+#letter-p:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-q:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-r:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-s:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-t:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-u:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-v:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-w:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-x:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-y:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#letter-z:active {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+}
